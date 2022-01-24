@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada com loops</title>
+</head>
+<body>
+    <script>
+        //loop é quando eu tenho uma ação que precisa ser repetida várias vezes
+
+        let numero = prompt("Digite um número")
+        let indice = 0;
+
+        //loop com while - "enquanto x <= 10 faça yyy"
+        while(indice <=10){
+            document.write(`${numero} x ${indice} = ${(indice * numero)} <br>`)
+            indice++
+        }
+        document.write(`Essa foi a tabuada do ${numero} com o loop while<br><br>`)
+
+        //loop com do while, o código será executado ao menos uma vez, até passar pela condicional
+        do{
+            document.write(`${numero} x ${indice} = ${(indice * numero)}<br>`)
+        }while(indice <=10)
+        document.write(`Essa foi a tabuada do ${numero} com o loop do while <br><br>`)
+
+        //loop com for
+        for(let i = 0; i <= 10; i++){
+            document.write(`${numero} x ${i} = ${(i * numero)}<br>`)
+        }
+        document.write(`Essa foi a tabuada do ${numero} com o loop foor <br>`)
+    </script>
+</body>
+</html>

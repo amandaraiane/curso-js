@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <script>
+        // funções->> são blocos de comandos que serão utilizados quando necesário (blocos de códigos reaproveitáveis)
+        // três maneiras de criar uma função
+        //1-declarando uma função
+        function ola(){
+            document.write("Olá, mundo")
+        }
+
+        //chamando a função
+        ola()
+
+        //2-expressão de função 
+        const ola2 = function(){
+            console.log("Olá mundo de function expression")
+        }
+        ola2()
+
+        //3-arrow functions
+        const ola3 = () =>{
+            console.log("Olá mundo com arrow functions")
+        }
+        ola3()
+
+        //retorno de valores 
+        function obtemDiaSemana(){
+            return new Date().getDay()
+        }
+
+        let dia = obtemDiaSemana() //aqui a variável 'dia' recebe o retorno da função 'obtemDiaSemana'
+        console.log(dia)
+
+        //função recebendo valores
+        function somar(n1, n2){ //entre () são os parametros. É possível passar um valor padrão para os parametros, n1 = 0, n2 = 0
+            return n1 + n2
+        }
+
+        let soma = somar(3, 5)
+        console.log(soma)
+
+        console.log(somar(4, 6))
+        alert(somar(1, 14))
+
+    </script>
+</body>
+</html>

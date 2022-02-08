@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de erros</title>
+</head>
+<body>
+    
+    <script src="sum.js"></script>
+
+    <script>
+        //console.log(sum(3, 9))
+        //console.log(sum(3, "a")) //aqui ocorre o tratamento de erro q adicionamos no arquivo sum.js
+
+        try{
+            let soma = sum(3, "a")
+        }catch(e){
+            alert("Ocorreu um erro")
+            console.log(e.message) //o '.message serve para retornar apenas a mensagem, podendo ou não ser utilizada'
+        }finally{ //esse bloco vai ser executado independente se houve um erro ou não
+            console.log("bloco finally")
+            
+        }
+
+    </script>
+</body>
+</html>

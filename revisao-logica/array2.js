@@ -1,0 +1,6 @@
+//iterações com array
+const nomes = ["Amanda", "Raiane", "Maria", "Luiza"]
+
+for(let i = 0; i < nomes.length; i++){
+    console.log(`${i}: Nome é ${nomes[i]}`)
+}
